@@ -4,12 +4,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SidBar</title>
   <link rel="stylesheet" href="../output.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
 </head>
 <body>
-    <button class="absolute text-black cursor-pointer top-2 right-3.5 text-2xl z-10 hidden" id="open">✔</button>
-  <div id="largeScreensidbarLoader">
-  </div> 
- <div id="smallScreensidbarLoader" class="-z-10"></div>
-</body>
+
+
+  <div class="flex items-center justify-between bg-[#df9711] w-full h-20 p-4 text-white -z-10 md:hidden lg:hidden" id="showSidbar">
+     <span class="md:text-xl">Restaurant <sup>Name</sup></span>
+      <button class="text-2xl cursor-pointer" id="open"><i class="ri-menu-line"></i></button>
+  </div>
+    
+  <div id="largeScreensidbarLoader" class="z-10"></div> 
+  <div id="smallScreensidbarLoader" class="-z-10 hidden"></div>
+</body>  
 <script src="header.js"></script>
 </html>
